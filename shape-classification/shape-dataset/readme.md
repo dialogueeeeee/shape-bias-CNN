@@ -21,7 +21,8 @@
 python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:\graduation_prj\texture-vs-shape_ArticalRec\train --output-dir F:\pyprj_testfile\shape\style_rectangle --num-styles 10 --alpha 0.3 --content-size 0 --style-size 256
 ```
 - 生成结果示例图：
-- 
+![example_style](https://user-images.githubusercontent.com/59753705/154614451-108bb5ef-1b57-4aae-940e-9cd68abacfb0.PNG)
+
 
 ### 形状数据集
 将原始形状数据集 OSD 和风格化形状数据集 SSD 相结合，即把对应相同形状类放在同一个文件夹下，得到 **形状数据集 SD (shape dataset)** 。
