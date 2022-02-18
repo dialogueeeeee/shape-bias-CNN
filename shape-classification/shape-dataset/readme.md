@@ -10,6 +10,7 @@
 - 生成图片背景为偏黑或偏白（各占 50% ，该值可根据需要调节，此处设置 50% 是为了使得样本均匀），目的是为了让生成的形状和背景相区分开，避免由于形状颜色和背景颜色相似或相同导致无法识别形状；
 - 目前可以随机生成四种形状：**矩形、圆形、椭圆形、三角形** ；
 - 生成结果示例图：
+
 ![example_org](https://user-images.githubusercontent.com/59753705/154614410-5a2b99ff-d736-4a31-944b-56f850b62bef.PNG)
 
 
@@ -21,6 +22,7 @@
 python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:\graduation_prj\texture-vs-shape_ArticalRec\train --output-dir F:\pyprj_testfile\shape\style_rectangle --num-styles 10 --alpha 0.3 --content-size 0 --style-size 256
 ```
 - 生成结果示例图：
+
 ![example_style](https://user-images.githubusercontent.com/59753705/154614451-108bb5ef-1b57-4aae-940e-9cd68abacfb0.PNG)
 
 
