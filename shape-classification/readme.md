@@ -24,6 +24,13 @@ epoch_step_val  = num_val // Batch_size
 
 ### 使用训练好的模型进行预测
 - 从权值文件中选择 loss 较小的文件进行预测，本项目选取 `ep181-loss0.011-val_loss0.014.pth` 文件；
+- 按照同样的方法重新生成测试数据集，运行 `eval_top1.py` 文件预测准确度为 **94.55%** ；
 - 修改并运行 `predict.py` 文件，使用训练好的模型进行预测；
 - 预测结果良好，准确率较高，预测示例如下：
-- 当输入图像为形状较为明显的自然图像时，也能准确预测形状，预测示例如下：在一定程度上说明该网络能提取物体的形状特征，有待进一步研究。
+- 
+![example_predict03](https://user-images.githubusercontent.com/59753705/156885735-c2a13ade-a006-4038-a66d-50408593b8fd.PNG)
+
+- 当输入图像为形状较为明显的自然图像时，也能准确预测形状，预测示例如下。在一定程度上说明该网络能提取物体的形状特征，网络性质有待进一步研究。
+
+![example_predict07](https://user-images.githubusercontent.com/59753705/156885770-e78145ca-cfdf-4cd6-b603-748335361414.PNG)
+![example_predict11](https://user-images.githubusercontent.com/59753705/156885776-c64b5f99-e5fc-4960-b5aa-ac0a30f5aff1.PNG)
