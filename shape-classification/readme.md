@@ -9,16 +9,13 @@
 - 运行 `txt_annotation.py` 得到根目录下的 `cls_train.txt` 和 `cls_test.txt` 文件，分别指向对应的训练和验证数据集的图片位置；
 
 ### 训练模型
-- 按照自己需求配置 `train.py` 文件，本次实验配置如下：
+- 按照自己需求配置 `train.py` 文件的超参数，本次实验配置如下：
 ```
 backbone        = "resnet50"
 lr              = 1e-4
 Batch_size      = 16
 Freeze_Epoch    = 50
 Epoch           = 200
-
-epoch_step      = num_train // Batch_size
-epoch_step_val  = num_val // Batch_size
 ```
 - 运行 `train.py` 文件，开始训练，得到权值文件(.pth) 。
 
