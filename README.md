@@ -1,5 +1,5 @@
 # shape-bias-CNN
-一种跨域形状偏好 CNN 设计与实现
+一种跨域形状偏好 CNN 设计与实现。
 ## 基于基础形状数据集的分类任务
 基础形状分类任务
 ### 基础形状数据集
@@ -22,7 +22,8 @@
 ![image](https://user-images.githubusercontent.com/59753705/158727143-62aa5d09-592a-4bc8-85c8-3790bc944429.png)
 ![image](https://user-images.githubusercontent.com/59753705/158727068-95a6adb0-2e56-4426-bab6-19b239611ce7.png)
 
-
+### 训练结果
+结果展示。
 
 ## 基于双任务的形状理解网络
 - 本项目通过同时训练两个形状相关任务，希望网络加强对形状的理解，并在迁移学习中获得形状偏好；
@@ -30,6 +31,7 @@
 - 任务二：基于组合复杂形状数据集的（15 类）分类任务，任务 2 详情可见文件夹 ``complicated-shape-classification``；
 - 联合损失函数：**L_total = L1 + α * L2** ，其中 α 为可调超参数。
 - 以下是基于双任务的形状理解网络训练原理示意图。
+
 ![双任务预训练结构02](https://user-images.githubusercontent.com/59753705/158997620-26a9f09e-a258-418a-b75a-71eaac26350a.png)
 
 ## 基于形状理解网络的迁移学习研究
