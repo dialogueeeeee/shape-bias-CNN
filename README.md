@@ -39,6 +39,7 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 
 ### 训练结果
 可以很好的分类简单形状，也可以检测并提取跨域形状特征。在以**相同方法生成的验证集**上准确率达到 **94.55%** ，示例结果如下。
+
 ![example_predict02](https://user-images.githubusercontent.com/59753705/159641116-3bf60536-5c6f-423e-8d0b-f18b105c0260.PNG)
 ![example_predict11](https://user-images.githubusercontent.com/59753705/159641408-8be9cb2c-b033-4834-a530-e1b108c1ac33.PNG)
 
@@ -59,6 +60,7 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 
 ### 训练结果
 可以很好的将复杂图像中含有的简单形状检测出来，示例结果如下。
+
 ![example_predict12](https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG)
 ![example_predict13](https://user-images.githubusercontent.com/59753705/159642260-d80cf489-23c4-4d59-852a-a93bfd121e6e.PNG)
 
@@ -75,7 +77,8 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 ## 基于形状理解网络的迁移学习研究
 基于形状理解网络的迁移学习研究
 ### 迁移学习形状偏好研究 (shape-bias) 
-- salience maps
+代码详见 https://github.com/PKUAI26/AT-CNN
+- salience maps 
 - Saturation
 - patch-shuffle
 ### 迁移学习跨域分类任务
