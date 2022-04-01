@@ -41,7 +41,6 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 可以很好的分类简单形状，也可以检测并提取跨域形状特征。在以**相同方法生成的验证集**上准确率达到 **94.55%** ，示例结果如下。
 
 ![example_predict02](https://user-images.githubusercontent.com/59753705/159641116-3bf60536-5c6f-423e-8d0b-f18b105c0260.PNG)
-![example_predict11](https://user-images.githubusercontent.com/59753705/159641408-8be9cb2c-b033-4834-a530-e1b108c1ac33.PNG)
 
 ## 基于组合复杂形状数据集的分类任务
 组合复杂形状分类任务，目的是通过学习复杂形状可以由简单形状组合得到，加深网络对形状的理解。具体实现都在 ``complicated-shape-classification`` 文件夹下。
@@ -62,7 +61,6 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 可以很好的将复杂图像中含有的简单形状检测出来，示例结果如下。
 
 ![example_predict12](https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG)
-![example_predict13](https://user-images.githubusercontent.com/59753705/159642260-d80cf489-23c4-4d59-852a-a93bfd121e6e.PNG)
 
 ## 基于双任务的形状理解网络
 - 本项目通过同时训练两个形状相关任务，希望网络加强对形状的理解，并在迁移学习中获得形状偏好；
@@ -85,3 +83,10 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 PACS dataset
 ### 迁移学习小样本分类任务
 few-shot classification
+
+## 探索
+基于自然语言指导的偏好分类网络。
+### 灵感来源
+**natural language is at once more expressive and easier to obtain than formal supervision.**
+自然语言往往比形式监督更具有表现力，而且更容易获得。
+
