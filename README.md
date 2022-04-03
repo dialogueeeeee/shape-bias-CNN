@@ -22,8 +22,9 @@
 - 二代形状数据集包含随机生成的十种形状：**矩形、圆形、椭圆形、三角形、棱形、五角星形、五边形、六边形、八边形、梯形** ；
 - 生成结果示例图：
 
-![example_org](https://user-images.githubusercontent.com/59753705/154614410-5a2b99ff-d736-4a31-944b-56f850b62bef.PNG)
-<!-- <img src="https://user-images.githubusercontent.com/59753705/154614410-5a2b99ff-d736-4a31-944b-56f850b62bef.PNG" width="100px"> -->
+<!-- ![example_org](https://user-images.githubusercontent.com/59753705/154614410-5a2b99ff-d736-4a31-944b-56f850b62bef.PNG) -->
+<!-- ![image](https://user-images.githubusercontent.com/59753705/161410186-87d74a31-519b-441f-a651-c661d0fa72e2.png) -->
+<div align=center><img src="https://user-images.githubusercontent.com/59753705/161410186-87d74a31-519b-441f-a651-c661d0fa72e2.png" width="600px"></div>
 
 #### 风格化形状图片
 - 由原始形状数据集 OSD 生成 **风格化形状数据集 SSD (stylized shape dataset)** ；
@@ -34,7 +35,9 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 ```
 - 生成结果示例图：
 
-![example_style](https://user-images.githubusercontent.com/59753705/154614451-108bb5ef-1b57-4aae-940e-9cd68abacfb0.PNG)
+<!-- ![example_style](https://user-images.githubusercontent.com/59753705/154614451-108bb5ef-1b57-4aae-940e-9cd68abacfb0.PNG) -->
+<!-- ![image](https://user-images.githubusercontent.com/59753705/161410273-ba04d724-a234-481d-8f72-9c790631e1d7.png) -->
+<div align=center><img src="https://user-images.githubusercontent.com/59753705/161410273-ba04d724-a234-481d-8f72-9c790631e1d7.png" width="600px"></div>
 
 #### 形状数据集
 将原始形状数据集 OSD 和风格化形状数据集 SSD 相结合，即把对应相同形状类放在同一个文件夹下，得到 **形状数据集 SD (shape dataset)** 。
