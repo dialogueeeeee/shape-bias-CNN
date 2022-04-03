@@ -18,6 +18,7 @@
 - 生成结果示例图：
 
 ![example_org](https://user-images.githubusercontent.com/59753705/154614410-5a2b99ff-d736-4a31-944b-56f850b62bef.PNG)
+<img src="https://user-images.githubusercontent.com/59753705/154614410-5a2b99ff-d736-4a31-944b-56f850b62bef.PNG" width="100px">
 
 #### 风格化形状图片
 - 由原始形状数据集 OSD 生成 **风格化形状数据集 SSD (stylized shape dataset)** ；
