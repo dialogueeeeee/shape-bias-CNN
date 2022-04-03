@@ -18,7 +18,7 @@
 - 生成结果示例图：
 
 ![example_org](https://user-images.githubusercontent.com/59753705/154614410-5a2b99ff-d736-4a31-944b-56f850b62bef.PNG)
-<img src="https://user-images.githubusercontent.com/59753705/154614410-5a2b99ff-d736-4a31-944b-56f850b62bef.PNG" width="100px">
+<!-- <img src="https://user-images.githubusercontent.com/59753705/154614410-5a2b99ff-d736-4a31-944b-56f850b62bef.PNG" width="100px"> -->
 
 #### 风格化形状图片
 - 由原始形状数据集 OSD 生成 **风格化形状数据集 SSD (stylized shape dataset)** ；
@@ -41,7 +41,8 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 ### 训练结果
 可以很好的分类简单形状，也可以检测并提取跨域形状特征。在以**相同方法生成的验证集**上准确率达到 **94.55%** ，示例结果如下。
 
-![example_predict02](https://user-images.githubusercontent.com/59753705/159641116-3bf60536-5c6f-423e-8d0b-f18b105c0260.PNG)
+<!-- ![example_predict02](https://user-images.githubusercontent.com/59753705/159641116-3bf60536-5c6f-423e-8d0b-f18b105c0260.PNG) -->
+<img src="https://user-images.githubusercontent.com/59753705/159641116-3bf60536-5c6f-423e-8d0b-f18b105c0260.PNG" width="300px">
 
 ## 基于组合复杂形状数据集的分类任务
 组合复杂形状分类任务，目的是通过学习复杂形状可以由简单形状组合得到，加深网络对形状的理解。具体实现都在 ``complicated-shape-classification`` 文件夹下。
@@ -61,7 +62,8 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 ### 训练结果
 可以很好的将复杂图像中含有的简单形状检测出来，示例结果如下。
 
-![example_predict12](https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG)
+<!-- ![example_predict12](https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG) -->
+<img src="https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG" width="300px">
 
 ## 基于双任务的形状理解网络
 - 本项目通过同时训练两个形状相关任务，希望网络加强对形状的理解，并在迁移学习中获得形状偏好；
