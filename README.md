@@ -21,7 +21,7 @@
 
 #### 风格化形状图片
 - 由原始形状数据集 OSD 生成 **风格化形状数据集 SSD (stylized shape dataset)** ；
-- 风格化代码来源于 aaa
+- 风格化代码来源于 https://github.com/rgeirhos/Stylized-ImageNet
 - 按照自己要求修改参数，输入命令进行风格化操作，示例命令如下：
 ``` SHELL
 python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:\graduation_prj\texture-vs-shape_ArticalRec\train --output-dir F:\pyprj_testfile\shape\style_rectangle --num-styles 10 --alpha 0.3 --content-size 0 --style-size 256
