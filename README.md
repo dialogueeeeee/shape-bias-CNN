@@ -84,17 +84,15 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 - 任务二：基于组合复杂形状数据集的（15 类）分类任务，任务 2 详情可见文件夹 ``complicated-shape-classification``；
 - 联合损失函数：**L_total = L1 + α * L2** ，其中 α 为可调超参数。
 
-## 基于形状理解网络的迁移学习研究
-基于形状理解网络的迁移学习研究
-### 迁移学习形状偏好研究 (shape-bias) 
-代码详见 https://github.com/PKUAI26/AT-CNN
-- salience maps 
-- Saturation
-- patch-shuffle
-### 迁移学习跨域分类任务
-PACS dataset
-### 迁移学习小样本分类任务
-few-shot classification
+## 迁移学习形状偏好研究 (shape-bias) 
+本项目设计实验探究网络的形状偏好和跨域性能，部分实验结果如下。
+<!-- 代码详见 https://github.com/PKUAI26/AT-CNN -->
+### salience maps 
+- 显著图实验直观的表明，由形状数据集预训练的网络具有显著的形状偏好；
+- 以下结果分别为 | Original Image | ImageNet-Pretrained | ShapeDataset-Pretrained freezen-layer1 | ShapeDataset-Pretrained freezen-layer2 |
+![image](https://user-images.githubusercontent.com/59753705/161411093-ec91625e-749d-42b0-8e40-e7990e14c768.png)
+![image](https://user-images.githubusercontent.com/59753705/161411101-b0896240-8f3e-4b09-a684-8fe5f442b043.png)
+
 
 ## 探索
 基于自然语言指导的偏好分类网络。
