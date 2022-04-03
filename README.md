@@ -1,5 +1,10 @@
 # shape-bias-CNN
 一种跨域形状偏好 CNN 设计与实现。
+- 本项目设计并实现了一种基于形状识别的预训练方法，通过迁移学习实验来验证网络特性，结果显著图表明使用该方法预训练的网络具有显著的形状偏好，而且在某些跨域分类任务上能与在ImageNet上预训练的网络性能相比较；
+- 基于双任务的形状理解网络示意图：
+
+<div align=center><img src="https://user-images.githubusercontent.com/59753705/158997620-26a9f09e-a258-418a-b75a-71eaac26350a.png" width="500px"></div>
+
 
 ## 基于基础形状数据集的分类任务
 基础形状分类任务，目的是使网络认识形状，提取形状特征。具体实现都在 ``shape-classification`` 文件夹下。
@@ -42,7 +47,9 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 在以**相同方法生成的验证集**上准确率达到 **94.55%** ；不但可以很好的分类简单形状，也可以 **检测并提取跨域形状特征** 。示例结果如下。
 
 <!-- ![example_predict02](https://user-images.githubusercontent.com/59753705/159641116-3bf60536-5c6f-423e-8d0b-f18b105c0260.PNG) -->
-<img src="https://user-images.githubusercontent.com/59753705/159641116-3bf60536-5c6f-423e-8d0b-f18b105c0260.PNG" width="300px">
+<!-- ![image](https://user-images.githubusercontent.com/59753705/161409622-d446047b-445b-45df-8136-a7f3c64e85f5.png) -->
+<!-- ![image](https://user-images.githubusercontent.com/59753705/161409625-3fb4d569-3f0b-4be8-a8c8-441472008a6a.png) -->
+<img src="https://user-images.githubusercontent.com/59753705/159641116-3bf60536-5c6f-423e-8d0b-f18b105c0260.PNG" width="300px"><img src="https://user-images.githubusercontent.com/59753705/161409622-d446047b-445b-45df-8136-a7f3c64e85f5.png" width="300px"><img src="https://user-images.githubusercontent.com/59753705/161409625-3fb4d569-3f0b-4be8-a8c8-441472008a6a.png" width="300px">
 
 ## 基于组合复杂形状数据集的分类任务
 组合复杂形状分类任务，目的是通过学习复杂形状可以由简单形状组合得到，加深网络对形状的理解。具体实现都在 ``complicated-shape-classification`` 文件夹下。
@@ -51,29 +58,28 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 - 本项目中，复杂形状定义是由多种简单形状组合生成。具体来说，通过**矩形、圆形、椭圆、三角形**四种简单形状任意组合，共 15 种组合方式，分别生成不同颜色的任意形状；
 - 本项目中，第一版本复杂形状最终生成 **15** 个类，每类 **460** 张，共 **6900** 张复杂形状数据集的图像。第一个版本中同一张图片中，形状的线宽和颜色都相同，主要考虑不想让网络通过颜色和线宽的“捷径”来区分形状，而是通过形状的内在特征。示例如下（示例分别为矩形三角形组合，圆形椭圆形组合）。
 
-![image](https://user-images.githubusercontent.com/59753705/157893057-3fe40c25-7640-48cf-901b-5db6c07ddb6d.png)
-![image](https://user-images.githubusercontent.com/59753705/157893309-77dc9482-2838-4d6a-898e-5b79ab02628e.png)
+<div align=center><img src="https://user-images.githubusercontent.com/59753705/157893057-3fe40c25-7640-48cf-901b-5db6c07ddb6d.png" width="350px"><img src="https://user-images.githubusercontent.com/59753705/157893309-77dc9482-2838-4d6a-898e-5b79ab02628e.png" width="350px"></div>
+<!-- ![image](https://user-images.githubusercontent.com/59753705/157893057-3fe40c25-7640-48cf-901b-5db6c07ddb6d.png) -->
+<!-- ![image](https://user-images.githubusercontent.com/59753705/157893309-77dc9482-2838-4d6a-898e-5b79ab02628e.png) -->
 
 - 第二版本复杂形状增加了不同颜色、不同线宽的形状，每类增加 **240** 张，共 **700** 张图片。然后每张图像生成一张风格化图像，每类生成 **700** 张风格化图像。综上所述，第二个版本复杂形状最终生成 **15** 个类，每类 **1400** 张，共 **21000** 张图片。新增图像示例如下。
 
-![image](https://user-images.githubusercontent.com/59753705/158727143-62aa5d09-592a-4bc8-85c8-3790bc944429.png)
-![image](https://user-images.githubusercontent.com/59753705/158727068-95a6adb0-2e56-4426-bab6-19b239611ce7.png)
+<div align=center><img src="https://user-images.githubusercontent.com/59753705/158727143-62aa5d09-592a-4bc8-85c8-3790bc944429.png" width="350px"><img src="https://user-images.githubusercontent.com/59753705/158727068-95a6adb0-2e56-4426-bab6-19b239611ce7.png" width="350px"></div>
+<!-- ![image](https://user-images.githubusercontent.com/59753705/158727143-62aa5d09-592a-4bc8-85c8-3790bc944429.png) -->
+<!-- ![image](https://user-images.githubusercontent.com/59753705/158727068-95a6adb0-2e56-4426-bab6-19b239611ce7.png) -->
 
 ### 训练结果
 可以很好的将复杂图像中含有的简单形状检测出来，示例结果如下。
 
 <!-- ![example_predict12](https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG) -->
-<img src="https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG" width="300px">
+<!-- ![image](https://user-images.githubusercontent.com/59753705/161409668-a222f0f5-54a3-4941-8595-43b5f188ce02.png) -->
+<img src="https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG" width="400px"><img src="https://user-images.githubusercontent.com/59753705/161409668-a222f0f5-54a3-4941-8595-43b5f188ce02.png" width="400px">
 
 ## 基于双任务的形状理解网络
 - 本项目通过同时训练两个形状相关任务，希望网络加强对形状的理解，并在迁移学习中获得形状偏好；
 - 任务一：基于基础形状数据集的（10 类）分类任务，任务 1 详情可见文件夹 ``shape-classification``；
 - 任务二：基于组合复杂形状数据集的（15 类）分类任务，任务 2 详情可见文件夹 ``complicated-shape-classification``；
 - 联合损失函数：**L_total = L1 + α * L2** ，其中 α 为可调超参数。
-- 以下是基于双任务的形状理解网络训练原理示意图。
-
-![双任务预训练结构02](https://user-images.githubusercontent.com/59753705/158997620-26a9f09e-a258-418a-b75a-71eaac26350a.png)
-
 
 ## 基于形状理解网络的迁移学习研究
 基于形状理解网络的迁移学习研究
