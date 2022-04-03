@@ -39,7 +39,7 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 - 二代形状数据集：**10类**，共 12884 张，每类约 **1300 张**（对于部分类别生成质量不高的图片进行了清除和筛选）。
 
 ### 训练结果
-可以很好的分类简单形状，也可以检测并提取跨域形状特征。在以**相同方法生成的验证集**上准确率达到 **94.55%** ，示例结果如下。
+在以**相同方法生成的验证集**上准确率达到 **94.55%** ；不但可以很好的分类简单形状，也可以 **检测并提取跨域形状特征** 。示例结果如下。
 
 <!-- ![example_predict02](https://user-images.githubusercontent.com/59753705/159641116-3bf60536-5c6f-423e-8d0b-f18b105c0260.PNG) -->
 <img src="https://user-images.githubusercontent.com/59753705/159641116-3bf60536-5c6f-423e-8d0b-f18b105c0260.PNG" width="300px">
