@@ -76,7 +76,7 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 
 <!-- ![example_predict12](https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG) -->
 <!-- ![image](https://user-images.githubusercontent.com/59753705/161409668-a222f0f5-54a3-4941-8595-43b5f188ce02.png) -->
-<img src="https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG" width="400px"><img src="https://user-images.githubusercontent.com/59753705/161409668-a222f0f5-54a3-4941-8595-43b5f188ce02.png" width="400px">
+<div align=center><img src="https://user-images.githubusercontent.com/59753705/159642107-19645377-a8f4-4627-913e-1b90d2afc00a.PNG" width="350px"><img src="https://user-images.githubusercontent.com/59753705/161409668-a222f0f5-54a3-4941-8595-43b5f188ce02.png" width="350px"></div>
 
 ## 基于双任务的形状理解网络
 - 本项目通过同时训练两个形状相关任务，希望网络加强对形状的理解，并在迁移学习中获得形状偏好；
@@ -98,8 +98,7 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 
 
 ## 探索
-基于自然语言指导的偏好分类网络。
-### 灵感来源
-**natural language is at once more expressive and easier to obtain than formal supervision.**
+- 基于自然语言指导的偏好分类网络；
+- **natural language is at once more expressive and easier to obtain than formal supervision.**
 自然语言往往比形式监督更具有表现力，而且更容易获得。
 
