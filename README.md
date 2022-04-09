@@ -96,6 +96,8 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 <!-- ![image](https://user-images.githubusercontent.com/59753705/161411093-ec91625e-749d-42b0-8e40-e7990e14c768.png) -->
 <!-- ![image](https://user-images.githubusercontent.com/59753705/161411101-b0896240-8f3e-4b09-a684-8fe5f442b043.png) -->
 
+## 迁移学习跨域性能研究
+采用 PACS 数据集上的准确率作为基准，部分结果如下。
 
 ## 探索
 - 基于自然语言指导的偏好分类网络；
