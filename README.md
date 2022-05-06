@@ -102,7 +102,7 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 - **Single source generalization results**
 
 | method\domain    | art_painting | cartoon | photo  | sketch | sketch |
-| -------- | -------- | -------- | -------- | -------- | -------- |
+| :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 | baseline(ResNet18) | 58.6% | 66.4% | 34.0% | 27.5% | 46.6% |
 | baseline + shapetask1 | 行3，列2 | 行3，列3 | 行3，列3 | 行3，列3 | 行3，列3 |
 | EFDM(SOTA) | 63.2% | **73.9%** | 42.5% | 38.1% | 54.4% |
