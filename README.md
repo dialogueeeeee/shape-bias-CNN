@@ -99,15 +99,14 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 ## 迁移学习跨域性能研究
 - 采用自己搭建的**跨域检测模板** https://github.com/dialogueeeeee/domain-generalization-platform 作为代码实现；
 - 采用 PACS 数据集上的准确率作为基准，部分结果如下：
+- **Single source generalization results**
 
 | method\domain    | art_painting | cartoon | photo  | sketch | sketch |
 | -------- | -------- | -------- | -------- | -------- | -------- |
-| baseline | 行1，列2 | 行1，列3 |行1，列3 |行3，列3 |行3，列3 |
-| from scratch | 行2，列2 | 行2，列3 |行2，列3 |行3，列3 |行3，列3 |
-| shapetask1 | 行3，列2 | 行3，列3 |行3，列3 |行3，列3 |行3，列3 |
-| baseline + shapetask1 | 行3，列2 | 行3，列3 |行3，列3 |行3，列3 |行3，列3 |
-| EFDM(SOTA) | 行3，列2 | 行3，列3 |行3，列3 |行3，列3 |行3，列3 |
-| EFDM + shapetask1 | 68.54% | 66.24% | 53.67% | 39.47% | 39.47% |
+| baseline(ResNet18) | 58.6% | 66.4% | 34.0% | 27.5% | 46.6% |
+| baseline + shapetask1 | 行3，列2 | 行3，列3 | 行3，列3 | 行3，列3 | 行3，列3 |
+| EFDM(SOTA) | 63.2% | **73.9%** | 42.5% | 38.1% | 54.4% |
+| EFDM + shapetask1 | **68.54%** | 66.24% | **53.67%** | **39.47%** | **56.98%** |
 
 ## 探索
 - 基于自然语言指导的偏好分类网络；
