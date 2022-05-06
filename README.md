@@ -97,8 +97,17 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 <!-- ![image](https://user-images.githubusercontent.com/59753705/161411101-b0896240-8f3e-4b09-a684-8fe5f442b043.png) -->
 
 ## 迁移学习跨域性能研究
-- 采用自己搭建的跨域检测平台 https://github.com/dialogueeeeee/domain-generalization-platform 作为代码实现；
-- 采用 PACS 数据集上的准确率作为基准，部分结果如下。
+- 采用自己搭建的**跨域检测模板** https://github.com/dialogueeeeee/domain-generalization-platform 作为代码实现；
+- 采用 PACS 数据集上的准确率作为基准，部分结果如下：
+
+| method\domain    | art_painting | cartoon | photo  | sketch | sketch |
+| -------- | -------- | -------- | -------- | -------- | -------- |
+| baseline | 行1，列2 | 行1，列3 |行1，列3 |行3，列3 |行3，列3 |
+| from scratch | 行2，列2 | 行2，列3 |行2，列3 |行3，列3 |行3，列3 |
+| shapetask1 | 行3，列2 | 行3，列3 |行3，列3 |行3，列3 |行3，列3 |
+| baseline + shapetask1 | 行3，列2 | 行3，列3 |行3，列3 |行3，列3 |行3，列3 |
+| EFDM(SOTA) | 行3，列2 | 行3，列3 |行3，列3 |行3，列3 |行3，列3 |
+| EFDM + shapetask1 | 68.54% | 66.24% | 53.67% | 39.47% | 39.47% |
 
 ## 探索
 - 基于自然语言指导的偏好分类网络；
