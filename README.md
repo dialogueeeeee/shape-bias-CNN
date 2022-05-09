@@ -104,7 +104,8 @@ python stylize.py --content-dir F:\pyprj_testfile\shape\rectangle --style-dir F:
 | method\domain    | art_painting | cartoon | photo  | sketch | sketch |
 | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 | baseline(ResNet18) | 58.6% | 66.4% | 34.0% | 27.5% | 46.6% |
-| baseline + shapetask1 | 行3，列2 | 行3，列3 | 行3，列3 | 行3，列3 | 行3，列3 |
+| baseline + shapetask1 | 62.68% | 59.47% | 33.07% | 30.44% | 46.41% |
+| MixStyle | 61.9% | 71.5% | 41.2% | 32.2% | 51.7% |
 | EFDM(SOTA) | 63.2% | **73.9%** | 42.5% | 38.1% | 54.4% |
 | EFDM + shapetask1 | **68.54%** | 66.24% | **53.67%** | **39.47%** | **56.98%** |
 
